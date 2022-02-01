@@ -19,10 +19,10 @@ export const mostrarSeleccion = () => {
        />
        <h3>${nombre}</h3>
        <div class="datos">
-           <p><span>Population:</span>${poblacion}</p>
-           <p><span>Region:</span>${region}</p>
-           <p><span>Capital:</span>${capital}</p>
-           <p><span>Description:</span>${descripcion}</p>
+           <p><span>Population: </span>${poblacion}</p>
+           <p><span>Region: </span>${region}</p>
+           <p><span>Capital: </span>${capital}</p>
+           <p><span>Description: </span>${descripcion}</p>
        </div>
    </div>
     `;

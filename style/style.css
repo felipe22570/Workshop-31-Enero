@@ -3,22 +3,27 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+body.dark {
+  background-color: #131216;
 }
 
 header {
   width: 100%;
   padding: 20px 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 body.dark header {
@@ -26,9 +31,7 @@ body.dark header {
 }
 
 header h1 {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   color: #131216;
 }
 
@@ -38,19 +41,10 @@ body.dark header h1 {
 
 header #darkMode {
   width: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   background-color: white;
   border: none;
 }
@@ -69,9 +63,7 @@ body.dark header #darkMode ion-icon {
 }
 
 header #darkMode p {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   text-align: left;
   color: #131216;
 }
@@ -91,34 +83,24 @@ body.dark main {
 main .barraFiltros {
   width: 100%;
   padding: 20px 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: row;
-      -ms-flex: row;
-          flex: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: row;
+  align-items: center;
+  justify-content: center;
+}
+main .barraFiltros a {
+  text-decoration: none;
+  color: #131216;
+}
+body.dark main .barraFiltros a {
+  color: white;
 }
 
 main .barraFiltros #formBusqueda {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   background-color: white;
 }
 
@@ -154,22 +136,11 @@ main .barraFiltros #formBusqueda button {
 }
 
 main .barraFiltros #filter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 main .barraFiltros #filter #filtro {
@@ -177,6 +148,8 @@ main .barraFiltros #filter #filtro {
   padding: 10px 0;
   background-color: white;
   color: #18171c;
+  border: none;
+  border-radius: 5px;
 }
 
 body.dark main .barraFiltros #filter #filtro {
@@ -187,38 +160,33 @@ body.dark main .barraFiltros #filter #filtro {
 main #paises {
   width: 100%;
   padding: 20px 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 main #paises .tarjetaPais {
   width: 20%;
   margin: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
   border-radius: 5px;
   background-color: white;
+}
+main #paises .tarjetaPais .btnMoreInfo {
+  border: none;
+  background-color: white;
+  color: #18171c;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+body.dark main #paises .tarjetaPais .btnMoreInfo {
+  background-color: #18171c;
+  color: white;
 }
 
 body.dark main #paises .tarjetaPais {
@@ -228,8 +196,7 @@ body.dark main #paises .tarjetaPais {
 main #paises .tarjetaPais img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
 }
 
@@ -247,6 +214,49 @@ main #paises .tarjetaPais .datos {
   color: #131216;
 }
 
+main #selecciones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main #selecciones .tarjetaSeleccion {
+  width: 40%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  border-radius: 5px;
+  background-color: white;
+}
+body.dark main #selecciones .tarjetaSeleccion {
+  background-color: #18171c;
+}
+main #selecciones .tarjetaSeleccion img {
+  border-radius: 5px;
+}
+main #selecciones .tarjetaSeleccion h3 {
+  color: #131216;
+  margin: 15px;
+}
+body.dark main #selecciones .tarjetaSeleccion h3 {
+  color: white;
+}
+main #selecciones .tarjetaSeleccion .datos {
+  margin: 15px;
+}
+body.dark main #selecciones .tarjetaSeleccion .datos {
+  color: white;
+}
+main #selecciones .tarjetaSeleccion .datos p {
+  margin: 5px 0;
+}
+main #selecciones .tarjetaSeleccion .datos p span {
+  font-weight: bold;
+}
+
 body.dark main #paises .tarjetaPais .datos {
   color: whitesmoke;
 }
@@ -254,4 +264,36 @@ body.dark main #paises .tarjetaPais .datos {
 main #paises .tarjetaPais .datos span {
   font-weight: bold;
 }
+
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+/*# sourceMappingURL=style.scss.map */
+
 /*# sourceMappingURL=style.css.map */

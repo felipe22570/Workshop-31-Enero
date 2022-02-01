@@ -24,19 +24,19 @@ export const buscar = async (e) => {
       const { id, imagen, nombre, region, capital, poblacion } = resultado;
 
       seccionPaises.innerHTML = `
-        <div class="tarjetaPais" >
+            <div class="tarjetaPais" >
             <img
-                src=${imagen}
-                alt=${nombre}
+               src=${imagen}
+               alt=${nombre}
             />
             <h3>${nombre}</h3>
             <div class="datos">
-                <p><span>Population: </span>${poblacion}</p>
-                <p><span>Region: </span>${region}</p>
-                <p><span>Capital: </span>${capital}</p>
+               <p><span>Population: </span>${poblacion}</p>
+               <p><span>Region: </span>${region}</p>
+               <p><span>Capital: </span>${capital}</p>
             </div>
-            <a href="seleccion.html" id=${id} class="btnMoreInfo">More info</a>
-        </div>
+            <button id=${id} class="btnMoreInfo">More info</button>
+      </div>
         `;
    } else {
       alert("El país no se ha encontrado");
