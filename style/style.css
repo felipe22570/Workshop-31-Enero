@@ -1,0 +1,257 @@
+/*Documento general de estilos*/
+/*Reseteo de estilos*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 20px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+}
+
+body.dark header {
+  background-color: #18171c;
+}
+
+header h1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: #131216;
+}
+
+body.dark header h1 {
+  color: white;
+}
+
+header #darkMode {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: white;
+  border: none;
+}
+
+body.dark header #darkMode {
+  background-color: #18171c;
+}
+
+header #darkMode ion-icon {
+  margin: 10px;
+  color: #131216;
+}
+
+body.dark header #darkMode ion-icon {
+  color: white;
+}
+
+header #darkMode p {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: left;
+  color: #131216;
+}
+
+body.dark header #darkMode p {
+  color: white;
+}
+
+main {
+  background-color: whitesmoke;
+}
+
+body.dark main {
+  background-color: #131216;
+}
+
+main .barraFiltros {
+  width: 100%;
+  padding: 20px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row;
+          flex: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .barraFiltros #formBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+body.dark main .barraFiltros #formBusqueda {
+  background-color: #18171c;
+}
+
+main .barraFiltros #formBusqueda ion-icon {
+  margin: 10px;
+  color: #18171c;
+}
+
+body.dark main .barraFiltros #formBusqueda ion-icon {
+  color: white;
+}
+
+main .barraFiltros #formBusqueda input {
+  width: 300px;
+  padding: 10px 0;
+  margin: 10px 10px 10px 0;
+  border: none;
+  background-color: white;
+  color: #18171c;
+}
+
+body.dark main .barraFiltros #formBusqueda input {
+  background-color: #18171c;
+  color: white;
+}
+
+main .barraFiltros #formBusqueda button {
+  display: none;
+}
+
+main .barraFiltros #filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .barraFiltros #filter #filtro {
+  width: 200px;
+  padding: 10px 0;
+  background-color: white;
+  color: #18171c;
+}
+
+body.dark main .barraFiltros #filter #filtro {
+  background-color: #18171c;
+  color: white;
+}
+
+main #paises {
+  width: 100%;
+  padding: 20px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main #paises .tarjetaPais {
+  width: 20%;
+  margin: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  border-radius: 5px;
+  background-color: white;
+}
+
+body.dark main #paises .tarjetaPais {
+  background-color: #18171c;
+}
+
+main #paises .tarjetaPais img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+main #paises .tarjetaPais h3 {
+  margin: 10px 10px;
+  color: #131216;
+}
+
+body.dark main #paises .tarjetaPais h3 {
+  color: white;
+}
+
+main #paises .tarjetaPais .datos {
+  margin: 10px 10px;
+  color: #131216;
+}
+
+body.dark main #paises .tarjetaPais .datos {
+  color: whitesmoke;
+}
+
+main #paises .tarjetaPais .datos span {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!--Linke de documento de estilos-->
+      <link rel="stylesheet" href="style/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+      <title>Workshop - Paises</title>
+   </head>
+   <body>
+      <header>
+         <h1>Where in the world?</h1>
+         <button id="darkMode">
+            <ion-icon name="moon-outline"></ion-icon>
+            <p>Dark mode</p>
+         </button>
+      </header>
+
+      <main>
+         <section class="barraFiltros">
+            <form id="formBusqueda">
+               <ion-icon name="search-outline"></ion-icon>
+               <input
+                  type="search"
+                  name="busqueda"
+                  id="busqueda"
+                  placeholder="Search for a country..."
+               />
+               <button type="submit"></button>
+            </form>
+
+            <form id="filter">
+               <select name="filtro" id="filtro" aria-placeholder="Filter by Region">
+                  <option value="filterbyregion">Filter by Region</option>
+                  <option value="Africa">Africa</option>
+                  <option value="America">America</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Europa">Europe</option>
+                  <option value="Oceania">Oceania</option>
+               </select>
+            </form>
+         </section>
+
+         <section id="paises"></section>
+      </main>
+
+      <!--Scripts principal-->
+      <script src="script/main.js" type="module"></script>
+      <script src="script/buscar.js" type="module"></script>
+
+      <!--Scripts de iconos-->
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   </body>
+</html>
